@@ -3,8 +3,9 @@ const content = {
     title: "WhizApp",
     description:
       "Streamline and Empower Your WhatsApp Experience with AI-Driven Management",
+    info: "WhatsApp Desktop Assistant (GPT3.5-Powered)",
     intro:
-      "Welcome to the WhatsApp Desktop Assistant! This application is a GPT2-powered chatbot that acts as an assistant based on the user’s chat history. It leverages the power of GPT2, fine-tuned using machine learning techniques, to provide intelligent responses and assist with various tasks.",
+      "Welcome to the WhatsApp Desktop Assistant! This application is a GPT3.5-powered chatbot that acts as an assistant based on the user's Context . It leverages the power of GPT3.5 turbo, to provide intelligent responses and assist with various tasks.",
     logo: "icon.png",
     repository: "https://github.com/KM8Oz/WhizApp",
     link: "http://dl.whizapp.dup.company/",
@@ -36,6 +37,26 @@ const content = {
       intro:
         "The application is developed using the Go programming language and utilizes the Fyne.io framework for building the user interface.",
     },
+    {
+      feature: "Google Image optimazed search",
+      intro:
+        "the bot provide an image search engine inside your whatsapp device.",
+    },
+  ],
+  
+  Installation: [
+    {
+      step: "Clone the repository",
+      description: "git clone https://github.com/KM8Oz/WhizApp.git",
+    },
+    {
+      step: "Install dependencies:",
+      description: "go mod tidy",
+    },
+    {
+      step: "Build and run the application",
+      description: "go build `then` ./whatsapp-desktop-assistant",
+    },
   ],
 
   Usage: [
@@ -61,42 +82,100 @@ const content = {
     },
   ],
 
+  Client: {
+    file:"client.go",
+    info: "This file is an integral part of the Whatsapp Business Manager app. It handles the communication with the Whatsapp server, processes incoming messages, and generates responses using the OpenAI GPT-3.5 language model.",
+  },
+
   Configuration: [
     {
       config: "phoneNumber",
       intro: "Your WhatsApp account phone number.",
-    },{
+    },
+    {
       config: "clientName",
       intro: "The name of the client.",
-    },{
+    },
+    {
       config: "sessionFile",
       intro: "The file path to store the session information.",
-    },{
+    },
+    {
       config: "timeout",
-      intro: "The timeout duration for the WhatsApp connection.", 
+      intro: "The timeout duration for the WhatsApp connection.",
+    },
+  ],
+  Libraries: [
+    {
+      import: "bytes",
+      info: "Provides functions for working with byte slices.",
+    },
+    {
+      import: "context",
+      info: "Provides a context for managing concurrent operations.",
+    },
+    {
+      import: "encoding/csv",
+      info: "Implements CSV encoding and decoding.",
+    },
+    {
+      import: "encoding/json",
+      info: "Implements JSON encoding and decoding.",
+    },
+    {
+      import: "fmt",
+      info: "Implements formatted I/O operations.",
+    },
+    {
+      import: "io/ioutil",
+      info: "Provides I/O utility functions.",
+    },
+    {
+      import: "net/http",
+      info: "Provides HTTP client and server implementations.",
+    },
+    {
+      import: "os",
+      info: "Provides I/O utility functions.",
+    },
+    {
+      import: "fyne.io/fyne/v2",
+      info: "Fyne toolkit for building graphical user interfaces.",
+    },
+    {
+      import: "github.com/tmc/langchaingo/llms/openai",
+      info: "OpenAI-based language model for LLM.",
+    },
+    {
+      import: "go.mau.fi/whatsmeow",
+      info: " Custom package for working with Whatsapp.",
+    },
+    {
+      import: "google.golang.org/protobuf/proto",
+      info: "google.golang.org/protobuf/proto",
     },
   ],
 
   Acknowledgements: [
     {
-      skill: "GPT2",
+      skill: "GPT3",
       description:
-        "This project utilizes the power of GPT2, a language model developed by OpenAI",
-    },{
+        "This project utilizes the power of GPT3, a language model developed by OpenAI",
+    },
+    {
       skill: "GoLang",
       description:
         "The application is built using the Go programming language and the Fyne.io framework.",
-    },{
+    },
+    {
       skill: "Github",
       description:
         "Special thanks to the open-source community for providing valuable resources and libraries.",
     },
   ],
-
-
-
-  
-  
+  License: {
+    info: "This project is licensed under the MIT License.",
+  },
 };
 
 export default content;

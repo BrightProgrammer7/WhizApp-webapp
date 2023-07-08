@@ -20,11 +20,11 @@
   }
 
   .colab {
-    @apply flex-box flex-none p-9;
+    @apply flex-box flex-none p-3;
   }
 
   .scroll-tap {
-    @apply snap-start snap-always h-screen container flex-box;
+    @apply snap-start snap-always container flex-box;
   }
 
   .heading {
@@ -32,10 +32,10 @@
   }
 
   .packgroup{
-    @apply border-box flex w-1/5 flex-wrap;
+    @apply border-box flex md:w-1/6 md:flex-wrap md:mr-8 drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]
   }
   .headline{
-    @apply text-2xl text-blue-400 uppercase;
+    @apply text-2xl text-blue-400 uppercase text-clip;
   }
   .list-group {
     @apply flex items-center justify-around flex-wrap md:mb-0 pb-3 border-solid border-2 border-gray-500 rounded-lg hover:border-double p-4 divide-x;
@@ -59,8 +59,8 @@
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  /* line-height: 1.5; */
+  /* font-weight: 400; */
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -91,8 +91,6 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  /* min-width: 320px; */
-  min-height: 100vh;
 }
 
 h1 {
