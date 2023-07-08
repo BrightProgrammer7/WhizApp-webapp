@@ -5,9 +5,9 @@ const content = {
       "Streamline and Empower Your WhatsApp Experience with AI-Driven Management",
     intro:
       "Welcome to the WhatsApp Desktop Assistant! This application is a GPT2-powered chatbot that acts as an assistant based on the user’s chat history. It leverages the power of GPT2, fine-tuned using machine learning techniques, to provide intelligent responses and assist with various tasks.",
-    logo: "Icon.png",
+    logo: "icon.png",
     repository: "https://github.com/KM8Oz/WhizApp",
-    link: "https://whiz-app.vercel.app/",
+    link: "http://dl.whizapp.dup.company/",
   },
   Features: [
     {
